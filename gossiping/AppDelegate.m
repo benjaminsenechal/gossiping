@@ -20,6 +20,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [Parse setApplicationId:@"93VmCmgr5lMwDSdH6Ve0xbBzpTLeVqdWa2BLaQ6X"
+                  clientKey:@"e1hT2hwgH3z58bGWV9UV01HrmFxF0uXS5bDl4z9L"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
     return YES;
 }
 
